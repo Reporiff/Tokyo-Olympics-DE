@@ -4,8 +4,6 @@ This project showcases a basic Data Engineering Pipeline built using Azure to pr
 
 This project focuses on pipeline implementation rather than heavy data transformation, as the data was already relatively clean, but it serves to highlight how these services integrate.
 
-Original dataset link: [2021 Olympics in Tokyo](https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo)
-
 # Resources 
 
 ### Dataset Used
