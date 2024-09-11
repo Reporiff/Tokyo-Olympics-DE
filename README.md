@@ -6,6 +6,34 @@ This project focuses on pipeline implementation rather than heavy data transform
 
 Original dataset link: [2021 Olympics in Tokyo](https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo)
 
+# Resources 
+
+### Dataset Used
+
+**Dataset Name:** [Tokyo 2021 Olympics Dataset](https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo)  
+**Location:** Kaggle  
+**Purpose:**  
+This dataset contains information about athletes, events, medals, and participating countries from the Tokyo 2021 Olympics. The dataset was used as the source data for the entire pipeline. The raw data was ingested from this dataset into Azure Data Lake Storage via Azure Data Factory. It was then transformed using Databricks and Apache Spark, and finally analyzed using SQL queries in Azure Synapse Analytics.
+
+The dataset includes:
+- **Athletes**: Information on each athlete, including their name, nationality, and discipline.
+- **Coaches**: Details on coaches for different teams.
+- **Medals**: A breakdown of the medals won by various countries in different events.
+- **Gender Entries**: Data on gender distribution across different disciplines.
+- **Teams**: Team information, including the countries and events they participated in.
+
+
+### Databricks Python Notebook
+  **File Name:** [Tokyo Olympics Transformation.ipynb](https://github.com/Reporiff/Tokyo-Olympics-DE/blob/main/Tokyo%20Olympics%20Transformation.ipynb)  
+  **Location:** Used in Azure Databricks  
+  **Purpose:** This Python notebook contains the Apache Spark code used for transforming the Tokyo 2021 Olympics dataset. The notebook was executed in the Databricks environment, where Spark was used for distributed data processing.
+
+### Synapse SQL Script
+**File Name:** [SQL Analytics Script.sql](https://github.com/Reporiff/Tokyo-Olympics-DE/blob/main/SQL%20Analytics%20Script.sql)  
+**Location:** Used in Azure Synapse Analytics  
+**Purpose:** This SQL script was executed in Azure Synapse Analytics to run queries on the transformed data. The queries included aggregating medal counts by country, analyzing athlete performances by discipline, and generating insights on gender distribution across different sports. The script was designed to leverage the scale of Synapse for handling large datasets efficiently.
+
+
 # Technologies Used
 
 Azure Data Factory: For ingesting data from external APIs and GitHub repositories.
@@ -17,6 +45,10 @@ Azure Databricks (Apache Spark): Data cleaning, transformation, and processing (
 Azure Synapse Analytics: For querying and analyzing transformed data.
 
 Tableau: For visualization.
+
+# Architecture Diagram
+
+![Architecture Diagram](https://github.com/Reporiff/Tokyo-Olympics-DE/blob/main/Architecture%20Overview.png)
 
 # Process Overview
 
